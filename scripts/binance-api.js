@@ -57,4 +57,4 @@ async function updateAllMarkets() {
 }
 
 updateAllMarkets();
-setInterval(updateAllMarkets, 10000); 
+setInterval(updateAllMarkets, 1000); 

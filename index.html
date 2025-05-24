@@ -15,34 +15,52 @@
     <div class="container">
         <header class="header">
             
-            <nav class="nav">
-               <a href="#" class="header__logo">Logo</a>
+            <nav class="nav fade-up">
+               <a href="#" class="header__logo fade-up">Logo</a>
 
-              <ul class="nav__list">
-                <li class="nav__item"><a href="" class="nav__link">About us</a></li>
-                <li class="nav__item"><a href="" class="nav__link">Account Type</a></li>
-                <li class="nav__item"><a href="" class="nav__link">Information</a></li>
-                <li class="nav__item"><a href="" class="nav__link">Trade View</a></li>
-                <li class="nav__item"><a href="" class="nav__link">Contact us</a></li>
+              <ul class="nav__list fade-up">
+                <li class="nav__item"><a href="#about-us" class="nav__link">About us</a></li>
+                <li class="nav__item"><a href="#price" class="nav__link">Account Type</a></li>
+                <li class="nav__item"><a href="#info" class="nav__link">Information</a></li>
+                <li class="nav__item"><a href="#trade" class="nav__link">Trade View</a></li>
+                <li class="nav__item"><a href="#contact" class="nav__link">Contact us</a></li>
               </ul>
             </nav>
 
-            <div class="herosection">
+                    <div class="burger-menu" id="burger-menu">
+          <ul class="container">
+            <li class="burger-link"><a href="#about-us">About us</a></li>
+            <div class="burger-hr"></div>
+            <li class="burger-link"><a href="#price">Account Type</a></li>
+            <div class="burger-hr"></div>
+            <li class="burger-link"><a href="#info">Information</a></li>
+            <div class="burger-hr"></div>
+            <li class="burger-link"><a href="#trade">Trade View</a></li>
+            <div class="burger-hr"></div>
+            <li class="burger-link"><a href="#contact">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="burger-icon" id="burger-icon">
+          <div class="burger-stick"></div>
+          <div class="burger-stick"></div>
+        </div>
+
+            <div class="herosection fade-up">
                <div class="herosection__content">
                   <h1 class="herosection__title"><span class="color">Innovation and reliability:</span> the path to long-term success</h1>
                   <p class="herosection__subtitle">Reliable growth in a rapidly changing world</p>
-                  <a href="#" class="herosection__cta">
+                  <a href="#contact" class="herosection__cta">
                      Open trading account
                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path d="M6 6v2h8.59L5 17.59 6.41 19 16 9.41V18h2V6z" fill="#0C0B11"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h24v24H0z"/></clipPath></defs></svg>
                   </a>
                </div>
 
-               <img src="./assets/images/herosection-img.webp" alt="" class="herosection__img" width="547" height="468">
+               <img src="./assets/images/herosection-img.webp" alt="" class="herosection__img fade-up" width="547" height="468">
             </div>
         </header>
 
         <main>
-            <section class="approach__container">
+            <section class="approach__container fade-up" id="about-us">
                <h2 class="approach__title">A <span class="color italic">modern approach</span> to financial management</h2>
                <p class="approach__subtitle">We live in an era of rapid technological change, and wealth management cannot be left behind. Our company implements digital analysis and monitoring tools to assess risks, identify trends and make decisions that improve portfolio performance as quickly and accurately as possible</p>
 
@@ -76,8 +94,8 @@
                </div>
             </section>
 
-            <div class="info__container">
-            <section class="growth__container">
+            <div class="info__container" id="info">
+            <section class="growth__container fade-up">
                <img src="./assets/images/growth-img.webp" alt="" class="growth__img" width="590" height="590">
 
                <div class="growth__content">
@@ -86,7 +104,7 @@
                </div>
             </section>
 
-            <section class="risk__container">
+            <section class="risk__container fade-up">
                <div class="risk__content">
                   <h2 class="risk__title"><span class="color italic">Risk <br> Control</span> and <span class="color italic">Compliance</span></h2>
                   <p class="risk__subtitle">To minimize volatility and maintain stability, we use multi-asset strategies, spreading investments across different industries and regions. This approach helps to mitigate the impact of localized market fluctuations and provide balanced returns.</p>
@@ -95,7 +113,7 @@
                <img src="./assets/images/risk-img.webp" alt="" class="risk__img" width="590" height="590">
             </section>
 
-            <section class="strategies__container">
+            <section class="strategies__container fade-up">
                <img src="./assets/images/strategies.webp" alt="" class="strategies__img" width="590" height="590">
 
                <div class="strategies__content">
@@ -105,7 +123,7 @@
             </section>
             </div>
             
-            <section class="price__container">
+            <section class="price__container fade-up" id="price">
                <h2 class="price__title">Pick your <br> <span class="color italic">trading account</span></h2>
                <p class="price__subtitle">We offer a range of account types with excellent trading conditions to suit any trader.</p>
 
@@ -118,7 +136,7 @@
                      <p class="pricing__card-description">An excellent choice for beginner traders, offering tight spreads from 1.2 pips on MT4 and MT5 platforms, along with micro-lot trading.</p>
                      
               <div class="pricing__card-actions">
-                <a href="#" class="pricing__card-link pricing__card-link--primary">
+                <a href="#contact" class="pricing__card-link pricing__card-link--primary">
                   Open account
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#a)">
@@ -144,7 +162,7 @@
                 Advanced features for experienced traders: low spreads from 1.2 pips, access to additional tools, and flexible trading conditions.
               </p>
               <div class="pricing__card-actions">
-                <a href="#" class="pricing__card-link pricing__card-link--primary">
+                <a href="#contact" class="pricing__card-link pricing__card-link--primary">
                   Open account
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#a)">
@@ -169,7 +187,7 @@
                 A premium account with exclusive benefits: minimal spreads, high-speed order execution, and priority 24/7 support.
               </p>
               <div class="pricing__card-actions">
-                <a href="#" class="pricing__card-link pricing__card-link--primary">
+                <a href="#contact" class="pricing__card-link pricing__card-link--primary">
                   Open account
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#a)">
@@ -188,7 +206,11 @@
           </div>
             </section>
 
-            <section >
+
+            <section class="blur fade-up" id="trade">
+
+            <div class="blur-left"></div>
+            <div class="blur-right"></div>
                <div class="markets__table">
                   <h2 class="markets__title">Experience superior <span class="color italic">execution & investing conditions</span></h2>
             <div class="markets__header">
@@ -269,6 +291,8 @@
           </div>
 
                     <div class="markets__mobile">
+                     <h2 class="markets__title">Experience superior <span class="color italic">execution & investing conditions</span></h2>
+                     
   <div class="markets__mobile-table-bg markets__mobile-radius">
     <div class="markets__mobile-row markets__mobile-row--header">
       <p class="markets__mobile-label">Markets</p>
@@ -427,9 +451,120 @@
 </div>
 
             </section>
+
+         <section class="form fade-up" id="contact">
+         <div class="block-one">
+
+            <div class="input-form">
+            <p class="form-title">Contact us</p>
+            <p class="form-subtitle">Today, and especially with the Swiss Vests Client Portal, and more so with our award-winning trading platform, we’ve made your access to the markets extremely easy!</p>
+            <form id="requestForm">
+              <div class="text-field">
+                <input class="text-field__input" type="text" id="name" name="name" placeholder="Ваше ім’я" required pattern="[A-Za-zА-Яа-яЇїЄєІіҐґ'’ ]+" title="Ім’я не може містити цифр">
+                <label class="text-field__label" for="name">Name</label>
+              </div>
+              <div class="text-field">
+                <input class="text-field__input" type="text" id="surname" name="surname" placeholder="Ваше прізвище" required pattern="[A-Za-zА-Яа-яЇїЄєІіҐґ'’ ]+" title="Прізвище не може містити цифр">
+                <label class="text-field__label" for="surname">Surname</label>
+              </div>
+              <div class="text-field">
+                <input class="text-field__input" type="email" id="email" name="email" placeholder="Ваш email" required>
+                <label class="text-field__label" for="email">Email</label>
+              </div>
+              <div class="text-field">
+                <select class="text-field__input text-field__select" id="country" placeholder="Country" name="country" required >
+                    <option value="" disabled selected hidden placeholder="Country"></option>
+                </select>
+                </div>
+
+              <div class="text-field">
+                <input class="text-field__input" type="tel" id="phone" name="phone" placeholder="Phone number"  title="Телефон може містити тільки цифри, пробіли, дужки, дефіси та символ '+' на початку">
+                <label class="text-field__label" for="phone">Phone number</label>
+              </div>
+              <input class="form__submit" type="submit" value="Submit">
+            </form>
+          </div>
+         </div>
+          
+         <img src="./assets/images/form-img.webp" alt="" width="530" height="445" class="form__img">
+
+           </section>
         </main>
+
+        <footer class="footer fade-up">
+  <div class="footer__container container">
+
+    <div class="footer__top">
+      <a href="#" class="footer__logo">Logo</a>
+      <ul class="footer__menu">
+        <li class="footer__menu-item"><a href="#about-us" class="footer__menu-link">About us</a></li>
+        <li class="footer__menu-item"><a href="#price" class="footer__menu-link">Account Type</a></li>
+        <li class="footer__menu-item"><a href="#info" class="footer__menu-link">Information</a></li>
+        <li class="footer__menu-item"><a href="#trade" class="footer__menu-link">Trade View</a></li>
+        <li class="footer__menu-item"><a href="#contact" class="footer__menu-link">ContAct us</a></li>
+      </ul>
     </div>
 
+    <div class="footer__bottom">
+      <div class="footer__info">
+        <p class="footer__disclaimer">
+          Trade Responsibly: Trading financial instruments carry a high level of risk and may not be suitable for all investors.
+          Please ensure that you understand the risks involved as you may lose all your invested capital.
+          Past performance of trading instruments is not a reliable indicator of future performance. Please read our ‘Risk Disclosure Notice’.
+        </p>
+        <p class="footer__company-number">Company number 12780933</p>
+        <p class="footer__address">
+          Registered office address: Devonshire House Off Ax, 582 Honeypot Lane, Stanmore, United Kingdom, England, HA7 1JS
+        </p>
+      </div>
+
+      <div class="footer__contact">
+        <p class="footer__contact-title">Our contact:</p>
+
+        <a href="tel:+38044444444" class="footer__contact-link">
+          <svg class="footer__icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="m9.158 5.712-.402-.906c-.264-.592-.395-.888-.592-1.115a2 2 0 0 0-.928-.603C6.949 3 6.624 3 5.976 3c-.948 0-1.422 0-1.82.182a2.12 2.12 0 0 0-1.061 1.169c-.143.413-.102.838-.02 1.689q1.31 13.575 14.885 14.885c.85.082 1.276.123 1.69-.02a2.12 2.12 0 0 0 1.168-1.06c.182-.399.182-.873.182-1.821 0-.649 0-.973-.088-1.26a2 2 0 0 0-.603-.928c-.227-.197-.523-.328-1.115-.592l-.906-.402c-.642-.285-.962-.428-1.288-.459a2 2 0 0 0-.919.128c-.305.119-.575.343-1.114.793-.537.447-.805.67-1.133.79a2.16 2.16 0 0 1-.982.101c-.345-.05-.61-.192-1.139-.475-1.646-.88-2.553-1.787-3.433-3.433-.283-.53-.424-.794-.475-1.14a2.16 2.16 0 0 1 .1-.98c.12-.329.344-.597.791-1.134.45-.54.674-.809.793-1.114.114-.292.158-.607.128-.919-.031-.325-.174-.646-.459-1.288Z" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+          +380 444 444 44
+        </a>
+
+        <a href="mailto:aaa@gmail.com" class="footer__contact-link">
+          <svg class="footer__icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="m2 6 6.913 3.917c2.549 1.444 3.625 1.444 6.174 0L22 6" stroke="#fff" stroke-width="1.5" stroke-linejoin="round"/>
+            <path d="M2.016 13.476c.065 3.065.098 4.598 1.229 5.733 1.131 1.136 2.705 1.175 5.854 1.254 1.94.05 3.862.05 5.802 0 3.149-.079 4.723-.118 5.854-1.254 1.131-1.135 1.164-2.668 1.23-5.733.02-.986.02-1.966 0-2.952-.066-3.065-.099-4.598-1.23-5.733-1.131-1.136-2.705-1.175-5.854-1.254a115 115 0 0 0-5.802 0c-3.149.079-4.723.118-5.854 1.254-1.131 1.135-1.164 2.668-1.23 5.733a69 69 0 0 0 0 2.952Z" stroke="#fff" stroke-width="1.5" stroke-linejoin="round"/>
+          </svg>
+          aaa@gmail.com
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <p class="rights">© 2023-2024. All rights reserved.</p>
+</footer>
+    </div>
+
+        <script>
+      document.addEventListener("DOMContentLoaded", () => {
+          const elements = document.querySelectorAll(".fade-up");
+      
+          const observer = new IntersectionObserver((entries) => {
+              entries.forEach(entry => {
+                  if (entry.isIntersecting) {
+                      entry.target.classList.add("show");
+                      observer.unobserve(entry.target);
+                  }
+              });
+          }, { threshold: 0.1 });
+      
+          elements.forEach(el => observer.observe(el));
+      });
+    </script>
+    
+    <script src="./scripts/burger-menu.js"></script>
+    <script src="./scripts/country.js"></script>
+    <script src="https://unpkg.com/imask"></script>
     <script src="./scripts/binance-api.js"></script>
+    <script src="./scripts/fade-up.js"></script>
 </body>
 </html>
