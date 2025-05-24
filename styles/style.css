@@ -1,0 +1,618 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+}
+
+h2{
+    font-weight: 500 !important;
+}
+
+body{
+    background-color: rgb(12, 11, 16);
+}
+
+.container{
+    max-width: 1230px;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.header{
+    margin-top: 40px;
+}
+
+.header__logo{
+    font-size: 24px;
+    font-weight: 400;
+    color: white;
+
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 55px;
+}
+
+.nav__list{
+    display: flex;
+    width: 510px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__link{
+    color: white;
+}
+
+.herosection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.herosection__title{
+    font-size: clamp(46px, 6vw, 90px);
+    color: white;
+    line-height: 95%;
+    font-weight: 500;
+}
+
+.color{
+    color: #A944F8;
+}
+.italic{
+    font-style: italic;
+}
+
+.herosection__content{
+    max-width: 693px;
+}
+
+.herosection__subtitle{
+    color: white;
+    font-size: clamp(16px, 1.25vw, 24px);
+    margin-top: 24px;
+    font-weight: 300;
+}
+
+.herosection__cta{
+    border-radius: 68px;
+    background-color: #fff;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    height: 68px;
+    width: 278px;
+    margin-top: 40px;
+}
+
+.herosection__img {
+    width: clamp(327px, 30vw, 547px);
+    height: auto;
+}
+
+.approach__title{
+    font-size: clamp(52px, 5.5vw, 72px);
+    color: white;
+    margin: auto;
+    max-width: 831px;
+    text-align: center;
+    margin-top: 105px;
+    line-height: 100%;
+    font-weight: 500;
+}
+
+.approach__subtitle{
+    font-size: 16px;
+    color: #9D9D9D;
+    text-align: center;
+    margin: auto;
+    max-width: 720px;
+    margin-top: 24px;
+    margin-bottom: 32px;
+}
+
+.cards__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 24px;
+  background-color: #111111;
+  border: 1px solid #2B2B2B;
+  border-radius: 24px;
+  width: 385px;
+  overflow: hidden;
+}
+
+
+.card--glow-top::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 204px;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #A944F8, transparent);
+  box-shadow: 0 0 12px #A944F8;
+  pointer-events: none;
+}
+
+.card--glow-bottom::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 204px;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #A944F8, transparent);
+  box-shadow: 0 0 12px #A944F8;
+  pointer-events: none;
+}
+
+
+.card__text{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.card__title{
+    font-size: 30px;
+    color: white;
+}
+
+.card__description{
+    color: #9D9D9D;
+    font-size: 16px;
+    font-weight: 300;
+}
+.card__icon{
+    width: 48px;
+    height: 48px;
+}
+
+.growth__container{
+    margin-top: 91px;
+}
+
+.growth__container, .risk__container, .strategies__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.growth__title, .risk__title, .strategies__title{
+    color: white;
+    font-size: clamp(52px, 5.5vw, 71px);
+    line-height: 100%;
+}
+
+.growth__content, .risk__content, .strategies__content{
+    max-width: 485px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.growth__subtitle, .risk__subtitle, .strategies__subtitle{
+    color: #9D9D9D;
+    font-weight: 300;
+}
+.growth__img, .risk__img, .strategies__img{
+    width: clamp(327px, 40vw, 590px);
+    height: auto;
+}
+
+.price__title{
+    font-size: clamp(41px, 5.5vw, 71px);
+    color: white;
+    line-height: 100%;
+    margin: auto;
+    text-align: center;
+    margin-top: 96px;
+}
+.price__subtitle{
+    color: #9D9D9D;
+    margin: auto;
+    text-align: center;
+    margin-top: 24px;
+    margin-bottom: 48px;
+}
+.pricing__card{
+    width: 387px;
+    height: 467px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    background-color: #111111;
+    border-radius: 24px;
+    padding: 48px;
+    border: 1px solid #353535;
+    position: relative; 
+}
+.pricing__card-name{
+    background: #111111;
+    border-radius: 40px;
+    font-weight: 400;
+    font-size: 24px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 46px;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: fit-content;
+    border: 1px solid #2B2B2B;
+}
+.pricing__card-name--gold{
+    background-color: #A944F8;
+    border: 1px solid #C57CFF;
+}
+.pricing__card-price{
+    font-weight: 400;
+    font-size: 48px;
+    color: #FFFFFF;
+}
+.pricing__card-description{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 120%;
+    color: #BFBFBF;
+}
+
+.pricing__card-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #BFBFBF;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    gap: 6px;
+    background-color: transparent;
+    border: 1px solid #353535;
+    border-radius: 48px;
+    text-decoration: none;
+    height: 56px;
+    text-transform: uppercase;
+}
+
+.pricing__card-link--primary{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-weight: 400;
+    font-size: 16px;
+    gap: 6px;
+    background-color: #fff;
+    border-radius: 48px;
+    text-decoration: none;
+    height: 56px;
+    text-transform: uppercase;
+}
+
+.pricing__card-actions{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.pricing__cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 48px;
+}
+
+.pricing__badge {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #FFFFFF;
+    width: 145px;
+    height: 40px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 300;
+    background-color: #262626;
+    border: 1px solid #4C4C4C;
+}
+
+.pricing__card--gold{
+    background: linear-gradient(180deg, #2A113E 0%, #111111 100%);
+    position: relative;
+    z-index: 1;
+}
+
+.pricing__card--gold::before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  right: -1px;
+  bottom: -1px;
+  background: linear-gradient(180deg, #2A113E, #111111);
+  z-index: -1;
+  border-radius: 10px;
+  filter: blur(8px);
+}
+
+
+.markets__table{
+    border-radius: 12px;
+    max-width: 1200px;
+    margin: auto;
+    margin-bottom: 96px;
+}
+.markets__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    color: white;
+    font-weight: 400;
+    background-color: #212121;
+    height: 62px;
+    padding: 24px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.markets__col-title{
+    width: 180px;
+}
+.hr{
+    height: 1px;
+    width: 100%;
+    background-color: #8C8C8C;
+    opacity: 0.6;
+}
+.markets__row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px;
+    background-color: #1B1B1B;
+
+}
+.markets__col-value{
+    width: 180px;
+    color: white;
+    font-weight: 400;
+}
+.markets__asset{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.markets__col-value--positive{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid #2DBD85;
+    color: #2DBD85;
+    border-radius: 8px;
+    width: 120px;
+}
+
+.markets__col-value--negative{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid #D33536;
+    color: #D33536;
+    border-radius: 8px;
+    width: 120px;
+}
+.markets__col-title--change{
+    width: 120px;
+}
+.markets__row-bg{
+        display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px;
+    background-color: #212121;
+}
+.markets__row--border{
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.markets__mobile-table-bg{
+    width: 327px;
+    color: white;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background: #212121;
+    padding: 24px;
+}
+
+.markets__mobile-table{
+    width: 327px;
+    color: white;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background: #1B1B1B;
+    padding: 24px;
+}
+.markets__mobile-row{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    align-items: center;
+}
+.markets__mobile-label{
+    width: 90px;
+    color: #B7B7B7;
+}
+.markets__mobile-asset{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.markets__mobile-value--positive{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid #2DBD85;
+    color: #2DBD85;
+    border-radius: 8px;
+    width: 110px;
+}
+
+.markets__mobile-value--negative{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid #D33536;
+    color: #D33536;
+    border-radius: 8px;
+    width: 110px;
+}
+.markets__mobile{
+    display: none;
+}
+
+.markets__title{
+    font-size: clamp(52px, 5.5vw, 72px);
+    color: white;
+    margin: auto;
+    text-align: center;
+    margin-top: 96px;
+    margin-bottom: 48px;
+    line-height: 100%;
+}
+
+@media (max-width: 1200px){
+    .pricing__cards{
+        flex-direction: column;
+        gap: 24px;
+    }
+}
+
+@media (max-width: 700px){
+    .container{
+        max-width: 500px;
+    }
+
+    .herosection{
+        flex-direction: column;
+    }
+
+    .herosection__img {
+        width: 500px;
+        height: auto;
+    }
+    .nav__list{
+        display: none;
+    }
+    .cards__container{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .approach__title{
+        margin-top: 32px;
+    }
+    .growth__container, .strategies__container{
+        flex-direction: column-reverse;
+        gap: 32px;
+    }
+    .risk__container{
+        flex-direction: column;
+        gap: 32px;
+    }
+    .info__container{
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+    .growth__subtitle, .risk__subtitle, .strategies__subtitle{
+        text-align: center;
+    }
+    .growth__title, .risk__title, .strategies__title{
+        text-align: center;
+    }
+    .markets__table{
+        display: none;
+    }
+    .markets__mobile {
+        display: block;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .markets__mobile-radius{
+        border-top-left-radius: 24px;
+        border-top-right-radius: 24px;
+    }
+    .row-radius{
+        border-bottom-left-radius: 24px;
+        border-bottom-right-radius: 24px;
+    }
+
+
+}
+
+
+@media (max-width: 500px){
+    .container{
+        max-width: 327px;
+    }
+
+    .herosection{
+        flex-direction: column;
+    }
+
+    .herosection__img {
+        width: 327px;
+        height: auto;
+    }
+    .card{
+        max-width: 327px;
+    }
+    .pricing__card{
+        width: 327px;
+        padding: 24px;
+    }
+    .pricing__badge{
+        width: 130px;
+        height: 30px;
+        top: -16px;
+    }
+
+}
+
